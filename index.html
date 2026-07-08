@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Walter & Lorena | Nuestra Boda</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- PORTADA -->
+
+    <section class="sobre">
+      <img src="assets/img/esquinaArriba.png" class="flor flor-arriba" />
+
+      <div class="sobre-contenido">
+        <p class="iniciales">W & L</p>
+
+        <h1>
+          Walter
+
+          <span>&</span>
+
+          Lorena
+        </h1>
+
+        <p class="fecha">24 de Julio de 2026</p>
+
+        <!-- SOBRE -->
+
+        <div class="abrir-invitacion" id="abrir">
+          <div class="sobre-animacion">
+            <div class="tapa"></div>
+
+            <div class="carta">💌</div>
+          </div>
+
+          <p>Acompañanos en este día especial</p>
+        </div>
+      </div>
+
+      <img src="assets/img/esquinaAbajo.png" class="flor flor-abajo" />
+    </section>
+
+    <!-- FLORES FIJAS DESPUES DEL SOBRE -->
+
+    <div class="flores-fijas">
+      <img src="assets/img/esquinaArriba.png" class="flor-fija arriba" />
+
+      <img src="assets/img/esquinaAbajo.png" class="flor-fija abajo" />
+    </div>
+
+    <!-- TRANSICION SOBRE PREMIUM -->
+
+    <div class="transicion-sobre" id="transicion">
+      <div class="sobre-grande">
+        <div class="sobre-centro">
+          W & L
+
+          <div class="corazon">♥</div>
+        </div>
+
+        <div class="tapa-grande"></div>
+
+        <div class="tarjeta">
+          <h2>Nos casamos</h2>
+
+          <p>Queremos compartir este día tan especial junto a ustedes</p>
+
+          <span> 24 de Julio de 2026 </span>
+        </div>
+      </div>
+    </div>
+    <!-- INVITACION -->
+
+    <main class="invitacion oculto">
+      <section class="bienvenida">
+        <div class="marco-flores">
+          <img src="assets/img/florMarco.png" class="flor-marco arriba" />
+
+          <img src="assets/img/florMarco.png" class="flor-marco abajo" />
+
+          <div class="contenido-marco">
+            <h2>Nos casamos</h2>
+
+            <p>
+              Después de tantos momentos compartidos, queremos celebrar este día
+              tan especial junto a las personas que más queremos.
+            </p>
+          </div>
+        </div>
+      </section>
+      <img src="assets/img/separador.png" class="separador-seccion" />
+      <section class="informacion">
+        <div class="marco-flores marco-dia">
+          <img src="assets/img/florMarco2.png" class="flor-marco arriba" />
+
+          <img src="assets/img/florMarco2.png" class="flor-marco abajo" />
+
+          <div class="contenido-marco">
+            <h2>El gran día</h2>
+
+            <div class="dato">
+              <h3>💍 Ceremonia Civil</h3>
+
+              <p>24 de Julio de 2026</p>
+
+              <p>12:00 hs</p>
+
+              <p class="lugar">📍 Registro Civil de Libertad</p>
+
+              <a class="boton-mapa" href="https://maps.app.goo.gl/3XvBXT955eCFfHnv8" target="_blank">
+                Ver ubicación
+              </a>
+            </div>
+<div class="dato">
+
+    <h3>🌿 Celebración</h3>
+
+    <p>
+        Al finalizar la ceremonia civil,
+        los esperamos para celebrar juntos este
+        momento tan especial.
+    </p>
+
+    <div class="lugar-evento">
+        <br>
+        <strong>Quinta Bianca</strong><br>
+        Mario Bravo 1241
+    </div>
+
+</div>
+        </div>
+      </section>
+      <img src="assets/img/separador.png" class="separador-seccion" />
+      <section class="contador">
+        <h2>Falta poco</h2>
+
+        <div class="tiempo">
+          <div class="unidad">
+            <span id="dias">00</span>
+            <p>Días</p>
+          </div>
+
+          <div class="separador-tiempo">:</div>
+
+          <div class="unidad">
+            <span id="horas">00</span>
+            <p>Horas</p>
+          </div>
+
+          <div class="separador-tiempo">:</div>
+
+          <div class="unidad">
+            <span id="minutos">00</span>
+            <p>Minutos</p>
+          </div>
+
+          <div class="separador-tiempo">:</div>
+
+          <div class="unidad">
+            <span id="segundos">00</span>
+            <p>Segundos</p>
+          </div>
+        </div>
+      </section>
+
+      <img src="assets/img/separador.png" class="separador-seccion" />
+
+<section class="regalos">
+
+    <h2>Regalos</h2>
+
+    <p>
+        Si desean acompañarnos con un regalo,
+        pueden hacerlo mediante los siguientes datos:
+    </p>
+
+
+    <div class="datos-regalo">
+
+
+        <div class="dato-regalo">
+
+            <h3>Alias</h3>
+
+            <span id="alias">
+                walter7076
+            </span>
+
+            <button onclick="copiarDato('alias')">
+                Copiar
+            </button>
+
+        </div>
+
+
+
+        <div class="dato-regalo">
+
+            <h3>CVU</h3>
+
+            <span id="cvu">
+               0000003100084997898329
+            </span>
+
+            <button onclick="copiarDato('cvu')">
+                Copiar
+            </button>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="titular">
+
+        <p>
+            Titular:
+        </p>
+
+        <strong>
+            Walter Julio Corderroura
+        </strong>
+
+    </div>
+
+
+</section>
+      <img src="assets/img/separador.png" class="separador-seccion" />
+      <section class="confirmacion">
+        <h2>Confirmá tu asistencia</h2>
+
+        <p>✨ Nos encantaría contar con vos ✨</p>
+
+        <a 
+    href="https://wa.me/549XXXXXXXXXX?text=Hola%20Walter%20y%20Lorena,%20confirmo%20mi%20asistencia%20a%20la%20boda."
+    class="boton-whatsapp"
+    target="_blank"
+>
+    💌 Confirmar asistencia
+</a>
+    </main>
+
+    <footer class="oculto">
+      <p>Walter & Lorena</p>
+
+      <span> Gracias por acompañarnos 🤍 </span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
