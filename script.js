@@ -44,6 +44,7 @@ botonAbrir.addEventListener("click", () => {
 
     document.body.style.overflow = "auto";
   }, 5000);
+  
 });
 // =========================
 // CONTADOR

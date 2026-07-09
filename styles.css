@@ -1,1368 +1,998 @@
+/* =========================
+   RESET GENERAL
+========================= */
 
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    scroll-behavior:smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
-    background:#F9F4EF;
-    color:#5C4634;
-    font-family:"Poppins",sans-serif;
-    overflow-x:hidden;
+body {
+  background: #f9f4ef;
+  color: #5c4634;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
-
-h1,h2{
-    font-family:"Cormorant Garamond",serif;
-    font-weight:600;
+h1,
+h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
 }
 
-
-p{
-    color:#7C6655;
-    line-height:1.8;
+p {
+  color: #7c6655;
+  line-height: 1.8;
 }
 
-
-img{
-    max-width:100%;
-    height:auto;
+img {
+  max-width: 100%;
+  height: auto;
 }
-
 
 /* =========================
    PORTADA
 ========================= */
 
+.sobre {
+  height: 100svh;
+  min-height: 600px;
 
-.sobre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    height:100svh;
-    min-height:600px;
+  position: relative;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    position:relative;
-
-    text-align:center;
-
+  text-align: center;
 }
 
+.sobre-contenido {
+  width: min(90%, 600px);
 
-.sobre-contenido{
+  padding: 30px;
 
-    width:min(90%,600px);
-
-    padding:30px;
-
-    z-index:2;
-
+  z-index: 2;
 }
 
+.iniciales {
+  font-size: 1.2rem;
 
+  letter-spacing: 5px;
 
-.iniciales{
+  color: #a98975;
 
-    font-size:1.2rem;
-
-    letter-spacing:5px;
-
-    color:#A98975;
-
-    margin-bottom:25px;
-
+  margin-bottom: 25px;
 }
 
+.sobre h1 {
+  font-size: clamp(3.5rem, 8vw, 6rem);
 
-
-.sobre h1{
-
-    font-size:clamp(3.5rem,8vw,6rem);
-
-    line-height:.9;
-
+  line-height: 0.9;
 }
 
+.sobre h1 span {
+  display: block;
 
+  font-size: clamp(2rem, 4vw, 3rem);
 
-.sobre h1 span{
+  margin: 15px 0;
 
-    display:block;
-
-    font-size:clamp(2rem,4vw,3rem);
-
-    margin:15px 0;
-
-    font-weight:400;
-
+  font-weight: 400;
 }
 
+.fecha {
+  margin-top: 40px;
 
+  font-size: 1.1rem;
 
-.fecha{
-
-    margin-top:40px;
-
-    font-size:1.1rem;
-
-    letter-spacing:2px;
-
+  letter-spacing: 2px;
 }
-
-
 
 /* FLORES PORTADA */
 
+.flor {
+  position: absolute;
 
-.flor{
+  width: clamp(80px, 12vw, 120px);
 
-    position:absolute;
-
-    width:clamp(80px,12vw,120px);
-
-    z-index:1;
-
+  z-index: 1;
 }
 
+.flor-arriba {
+  top: 0;
 
-
-.flor-arriba{
-
-    top:0;
-
-    left:0;
-
+  left: 0;
 }
 
+.flor-abajo {
+  bottom: 0;
 
-
-.flor-abajo{
-
-    bottom:0;
-
-    right:0;
-
+  right: 0;
 }
-
-
 
 /* =========================
    BOTON ABRIR
 ========================= */
 
+.abrir-invitacion {
+  margin-top: 45px;
 
-.abrir-invitacion{
+  padding: 14px 38px;
 
-    margin-top:45px;
+  background: #8b6b61;
 
-    padding:14px 38px;
+  color: white;
 
-    background:#8B6B61;
+  border-radius: 50px;
 
-    color:white;
+  cursor: pointer;
 
-    border-radius:50px;
+  display: inline-block;
 
-    cursor:pointer;
-
-    display:inline-block;
-
-    animation:latido 2.5s infinite;
-
+  animation: latido 2.5s infinite;
 }
 
-
-
-.abrir-invitacion p{
-
-    color:white;
-
+.abrir-invitacion p {
+  color: white;
 }
 
-
-
-@keyframes latido{
-
-    50%{
-
-        transform:scale(1.04);
-
-    }
-
+@keyframes latido {
+  50% {
+    transform: scale(1.04);
+  }
 }
-
-
 
 /* =========================
    SECCIONES
 ========================= */
 
+section:not(.sobre) {
+  max-width: 900px;
 
-section:not(.sobre){
+  margin: auto;
 
-    max-width:900px;
+  padding: 50px 20px;
 
-    margin:auto;
-
-    padding:50px 20px;
-
-    text-align:center;
-
+  text-align: center;
 }
 
+h2 {
+  font-size: clamp(2.3rem, 5vw, 3rem);
 
-
-h2{
-
-    font-size:clamp(2.3rem,5vw,3rem);
-
-    margin-bottom:30px;
-
+  margin-bottom: 30px;
 }
-
-
 
 /* =========================
    CONTADOR
 ========================= */
 
-
-.contador h2{
-
-    font-size:clamp(3rem,7vw,4rem);
-
+.contador h2 {
+  font-size: clamp(3rem, 7vw, 4rem);
 }
 
+.tiempo {
+  display: flex;
 
+  justify-content: center;
 
-.tiempo{
+  align-items: center;
 
-    display:flex;
+  flex-wrap: wrap;
 
-    justify-content:center;
-
-    align-items:center;
-
-    flex-wrap:wrap;
-
-    gap:15px;
-
+  gap: 15px;
 }
 
+.unidad {
+  width: 130px;
 
+  height: 130px;
 
-.unidad{
+  border: 1px solid rgba(169, 137, 117, 0.5);
 
-    width:130px;
+  display: flex;
 
-    height:130px;
+  flex-direction: column;
 
-    border:1px solid rgba(169,137,117,.5);
+  justify-content: center;
 
-    display:flex;
+  align-items: center;
 
-    flex-direction:column;
-
-    justify-content:center;
-
-    align-items:center;
-
-    position:relative;
-
+  position: relative;
 }
 
+.unidad::before {
+  content: "";
 
+  position: absolute;
 
-.unidad::before{
+  inset: 6px;
 
-    content:"";
-
-    position:absolute;
-
-    inset:6px;
-
-    border:1px solid rgba(184,149,94,.35);
-
+  border: 1px solid rgba(184, 149, 94, 0.35);
 }
 
+.unidad span {
+  font-family: "Cormorant Garamond", serif;
 
+  font-size: 5rem;
 
-.unidad span{
+  line-height: 1;
 
-    font-family:"Cormorant Garamond",serif;
+  color: #8b6b61;
 
-    font-size:5rem;
-
-    line-height:1;
-
-    color:#8B6B61;
-
-    z-index:1;
-
+  z-index: 1;
 }
 
+.unidad p {
+  font-size: 0.75rem;
 
+  letter-spacing: 2px;
 
-.unidad p{
+  text-transform: uppercase;
 
-    font-size:.75rem;
-
-    letter-spacing:2px;
-
-    text-transform:uppercase;
-
-    z-index:1;
-
+  z-index: 1;
 }
 
+.separador-tiempo {
+  font-family: "Cormorant Garamond", serif;
 
+  font-size: 4rem;
 
-.separador-tiempo{
-
-    font-family:"Cormorant Garamond",serif;
-
-    font-size:4rem;
-
-    color:#A98975;
-
+  color: #a98975;
 }
-
-
 
 /* =========================
    BOTONES
 ========================= */
 
-
 button,
 .boton-whatsapp,
-.boton-mapa{
+.boton-mapa {
+  display: inline-block;
 
-    display:inline-block;
+  margin-top: 25px;
 
-    margin-top:25px;
+  padding: 15px 35px;
 
-    padding:15px 35px;
+  background: #8b6b61;
 
-    background:#8B6B61;
+  color: white !important;
 
-    color:white !important;
+  border: none;
 
-    border:none;
+  border-radius: 50px;
 
-    border-radius:50px;
+  text-decoration: none;
 
-    text-decoration:none;
-
-    cursor:pointer;
-
+  cursor: pointer;
 }
-
 
 button:hover,
 .boton-whatsapp:hover,
-.boton-mapa:hover{
-
-    background:#70544D;
-
+.boton-mapa:hover {
+  background: #70544d;
 }
 
 /* =========================
    SOBRE ANIMADO BOTON
 ========================= */
 
+.sobre-animacion {
+  width: 80px;
+  height: 55px;
 
-.sobre-animacion{
+  background: #8b6b61;
 
-    width:80px;
-    height:55px;
+  margin: 0 auto 15px;
 
-    background:#8B6B61;
+  position: relative;
 
-    margin:0 auto 15px;
+  border-radius: 5px;
 
-    position:relative;
-
-    border-radius:5px;
-
-    overflow:hidden;
-
+  overflow: hidden;
 }
 
+.tapa {
+  position: absolute;
 
-.tapa{
+  top: 0;
+  left: 0;
 
-    position:absolute;
+  width: 100%;
+  height: 100%;
 
-    top:0;
-    left:0;
+  background: #a98975;
 
-    width:100%;
-    height:100%;
+  clip-path: polygon(0 0, 50% 60%, 100% 0);
 
-    background:#A98975;
+  transform-origin: top;
 
-    clip-path:polygon(0 0,50% 60%,100% 0);
-
-    transform-origin:top;
-
-    transition:1s;
-
+  transition: 1s;
 }
 
+.carta {
+  position: absolute;
 
+  bottom: -40px;
 
-.carta{
+  left: 20px;
 
-    position:absolute;
+  font-size: 35px;
 
-    bottom:-40px;
-
-    left:20px;
-
-    font-size:35px;
-
-    transition:1s;
-
+  transition: 1s;
 }
 
-
-
-.abrir-invitacion.abierto .tapa{
-
-    transform:rotateX(180deg);
-
+.abrir-invitacion.abierto .tapa {
+  transform: rotateX(180deg);
 }
 
-
-.abrir-invitacion.abierto .carta{
-
-    bottom:10px;
-
+.abrir-invitacion.abierto .carta {
+  bottom: 10px;
 }
-
-
-
-
 
 /* =========================
    TRANSICION SOBRE PREMIUM
 ========================= */
 
+.transicion-sobre {
+  position: fixed;
 
-.transicion-sobre{
+  inset: 0;
 
-    position:fixed;
+  width: 100%;
 
-    inset:0;
+  height: 100svh;
 
-    width:100%;
+  background: #f9f4ef;
 
-    height:100svh;
+  display: flex;
 
-    background:#F9F4EF;
+  justify-content: center;
 
-    display:flex;
+  align-items: center;
 
-    justify-content:center;
+  z-index: 100;
 
-    align-items:center;
+  opacity: 0;
 
-    z-index:100;
+  pointer-events: none;
 
-    opacity:0;
+  transition: 1s;
 
-    pointer-events:none;
-
-    transition:1s;
-
-    padding:20px;
-
+  padding: 20px;
 }
 
+.transicion-sobre.activo {
+  opacity: 1;
 
-
-.transicion-sobre.activo{
-
-    opacity:1;
-
-    pointer-events:auto;
-
+  pointer-events: auto;
 }
-
-
-
 
 /* SOBRE GRANDE */
 
+.sobre-grande {
+  width: min(330px, 85vw);
 
-.sobre-grande{
+  height: min(220px, 60vw);
 
-    width:min(330px,85vw);
+  background: #8b6b61;
 
-    height:min(220px,60vw);
+  border-radius: 12px;
 
-    background:#8B6B61;
+  position: relative;
 
-    border-radius:12px;
+  overflow: visible;
 
-    position:relative;
-
-    overflow:visible;
-
-    box-shadow:0 20px 50px rgba(92,70,52,.25);
-
+  box-shadow: 0 20px 50px rgba(92, 70, 52, 0.25);
 }
 
+.sobre-centro {
+  height: 100%;
 
+  display: flex;
 
+  justify-content: center;
 
-.sobre-centro{
+  align-items: center;
 
-    height:100%;
+  flex-direction: column;
 
-    display:flex;
+  font-family: "Cormorant Garamond", serif;
 
-    justify-content:center;
+  font-size: clamp(2.5rem, 8vw, 4rem);
 
-    align-items:center;
-
-    flex-direction:column;
-
-    font-family:"Cormorant Garamond",serif;
-
-    font-size:clamp(2.5rem,8vw,4rem);
-
-    color:white;
-
+  color: white;
 }
 
+.corazon {
+  font-size: 1.8rem;
 
-
-.corazon{
-
-    font-size:1.8rem;
-
-    margin-top:10px;
-
+  margin-top: 10px;
 }
-
-
-
-
 
 /* TAPA */
 
+.tapa-grande {
+  position: absolute;
 
-.tapa-grande{
+  top: 0;
 
-    position:absolute;
+  left: 0;
 
-    top:0;
+  width: 100%;
 
-    left:0;
+  height: 100%;
 
-    width:100%;
+  background: #a98975;
 
-    height:100%;
+  clip-path: polygon(0 0, 50% 60%, 100% 0);
 
+  transform-origin: top;
 
-    background:#A98975;
+  transition: 1.5s;
 
-    clip-path:polygon(0 0,50% 60%,100% 0);
-
-    transform-origin:top;
-
-    transition:1.5s;
-
-    z-index:3;
-
+  z-index: 3;
 }
-
-
-
-
 
 /* TARJETA QUE SALE DEL SOBRE */
 
+.tarjeta {
+  position: absolute;
 
-.tarjeta{
+  width: calc(100% - 40px);
 
-    position:absolute;
+  max-width: 280px;
 
+  left: 50%;
 
-    width:calc(100% - 40px);
+  transform: translateX(-50%);
 
-    max-width:280px;
+  bottom: -230px;
 
+  background: #f9f4ef;
 
-    left:50%;
+  padding: 25px;
 
-    transform:translateX(-50%);
+  border-radius: 10px;
 
+  text-align: center;
 
-    bottom:-230px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 
+  transition: 1.5s;
 
-    background:#F9F4EF;
+  opacity: 0;
 
-
-    padding:25px;
-
-
-    border-radius:10px;
-
-
-    text-align:center;
-
-
-    box-shadow:0 10px 30px rgba(0,0,0,.15);
-
-
-    transition:1.5s;
-
-
-    opacity:0;
-
-
-    z-index:2;
-
-
+  z-index: 2;
 }
 
+.tarjeta h2 {
+  font-size: 2.2rem;
 
-
-.tarjeta h2{
-
-    font-size:2.2rem;
-
-    margin-bottom:15px;
-
+  margin-bottom: 15px;
 }
 
+.tarjeta p {
+  font-size: 0.9rem;
 
-
-.tarjeta p{
-
-    font-size:.9rem;
-
-    line-height:1.5;
-
+  line-height: 1.5;
 }
 
+.tarjeta span {
+  display: block;
 
+  margin-top: 15px;
 
-.tarjeta span{
+  font-family: "Cormorant Garamond", serif;
 
-    display:block;
+  font-size: 1.4rem;
 
-    margin-top:15px;
-
-    font-family:"Cormorant Garamond",serif;
-
-    font-size:1.4rem;
-
-    color:#5C4634;
-
+  color: #5c4634;
 }
-
-
-
-
 
 /* APERTURA */
 
+.transicion-sobre.abierto .tapa-grande {
+  transform: rotateX(180deg);
 
-.transicion-sobre.abierto .tapa-grande{
-
-    transform:rotateX(180deg);
-
-    z-index:1;
-
+  z-index: 1;
 }
 
+.transicion-sobre.abierto .tarjeta {
+  bottom: 15px;
 
-
-.transicion-sobre.abierto .tarjeta{
-
-    bottom:15px;
-
-    opacity:1;
-
+  opacity: 1;
 }
-
-
-
-
 
 /* =========================
    APARICION DE INVITACION
 ========================= */
 
+.invitacion {
+  opacity: 0;
 
-.invitacion{
+  transform: translateY(40px);
 
-    opacity:0;
-
-    transform:translateY(40px);
-
-    transition:1.5s ease;
-
+  transition: 1.5s ease;
 }
 
+.invitacion.mostrar {
+  opacity: 1;
 
-
-.invitacion.mostrar{
-
-    opacity:1;
-
-    transform:translateY(0);
-
+  transform: translateY(0);
 }
 
 /* =========================
    MARCOS DECORATIVOS
 ========================= */
 
+.bienvenida {
+  display: flex;
 
-.bienvenida{
+  justify-content: center;
 
-    display:flex;
+  align-items: center;
 
-    justify-content:center;
-
-    align-items:center;
-
-    min-height:55vh;
-
+  min-height: 55vh;
 }
 
+.marco-flores {
+  position: relative;
 
+  width: min(650px, 90%);
 
-.marco-flores{
+  margin: auto;
 
-    position:relative;
+  padding: 60px 50px;
 
-    width:min(650px,90%);
-
-    margin:auto;
-
-    padding:60px 50px;
-
-    border:1px solid rgba(169,137,117,.25);
-
+  border: 1px solid rgba(169, 137, 117, 0.25);
 }
 
+.contenido-marco {
+  position: relative;
 
+  z-index: 2;
 
-.contenido-marco{
-
-    position:relative;
-
-    z-index:2;
-
-    text-align:center;
-
+  text-align: center;
 }
 
+.contenido-marco h2 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
 
+  color: #5c4634;
 
-.contenido-marco h2{
-
-    font-size:clamp(2.5rem,6vw,4rem);
-
-    color:#5C4634;
-
-    margin-bottom:25px;
-
+  margin-bottom: 25px;
 }
 
+.contenido-marco p {
+  font-size: 1.05rem;
 
-
-.contenido-marco p{
-
-    font-size:1.05rem;
-
-    line-height:2;
-
+  line-height: 2;
 }
-
-
 
 /* FLORES DEL MARCO */
 
+.flor-marco {
+  position: absolute;
 
-.flor-marco{
+  width: 140px;
 
-    position:absolute;
-
-    width:140px;
-
-    z-index:3;
-
+  z-index: 3;
 }
 
+.flor-marco.arriba {
+  top: -35px;
 
-
-.flor-marco.arriba{
-
-    top:-35px;
-
-    left:-35px;
-
+  left: -35px;
 }
 
+.flor-marco.abajo {
+  bottom: -35px;
 
+  right: -35px;
 
-.flor-marco.abajo{
-
-    bottom:-35px;
-
-    right:-35px;
-
-    transform:rotate(180deg);
-
+  transform: rotate(180deg);
 }
-
-
 
 /* ESQUINAS */
 
-
 .marco-flores::before,
-.marco-flores::after{
+.marco-flores::after {
+  content: "";
 
-    content:"";
+  position: absolute;
 
-    position:absolute;
+  width: 45px;
 
-    width:45px;
+  height: 45px;
 
-    height:45px;
-
-    z-index:2;
-
+  z-index: 2;
 }
 
+.marco-flores::before {
+  top: 0;
 
+  right: 0;
 
-.marco-flores::before{
+  border-top: 3px solid #a98975;
 
-    top:0;
-
-    right:0;
-
-    border-top:3px solid #A98975;
-
-    border-right:3px solid #A98975;
-
+  border-right: 3px solid #a98975;
 }
 
+.marco-flores::after {
+  bottom: 0;
 
+  left: 0;
 
-.marco-flores::after{
+  border-bottom: 3px solid #a98975;
 
-    bottom:0;
-
-    left:0;
-
-    border-bottom:3px solid #A98975;
-
-    border-left:3px solid #A98975;
-
+  border-left: 3px solid #a98975;
 }
-
-
-
 
 /* =========================
    MARCO EL GRAN DIA
 ========================= */
 
+.marco-dia .flor-marco.arriba {
+  top: -35px;
 
-.marco-dia .flor-marco.arriba{
+  right: -35px;
 
-    top:-35px;
+  left: auto;
 
-    right:-35px;
-
-    left:auto;
-
-    transform:scaleX(-1);
-
+  transform: scaleX(-1);
 }
 
+.marco-dia .flor-marco.abajo {
+  bottom: -35px;
 
+  left: -35px;
 
-.marco-dia .flor-marco.abajo{
+  right: auto;
 
-    bottom:-35px;
-
-    left:-35px;
-
-    right:auto;
-
-    transform:rotate(180deg) scaleX(-1);
-
+  transform: rotate(180deg) scaleX(-1);
 }
-
-
 
 /* ESQUINAS OPUESTAS */
 
+.marco-dia::before {
+  top: 0;
 
-.marco-dia::before{
+  left: 0;
 
-    top:0;
+  right: auto;
 
-    left:0;
+  border-top: 3px solid #8b6b61;
 
-    right:auto;
+  border-left: 3px solid #8b6b61;
 
-    border-top:3px solid #8B6B61;
-
-    border-left:3px solid #8B6B61;
-
-    border-right:none;
-
+  border-right: none;
 }
 
+.marco-dia::after {
+  bottom: 0;
 
+  right: 0;
 
-.marco-dia::after{
+  left: auto;
 
-    bottom:0;
+  border-bottom: 3px solid #8b6b61;
 
-    right:0;
+  border-right: 3px solid #8b6b61;
 
-    left:auto;
-
-    border-bottom:3px solid #8B6B61;
-
-    border-right:3px solid #8B6B61;
-
-    border-left:none;
-
+  border-left: none;
 }
-
-
-
 
 /* =========================
    DATOS CEREMONIA
 ========================= */
 
-
-.dato{
-
-    margin:45px 0;
-
+.dato {
+  margin: 45px 0;
 }
 
+.dato h3 {
+  font-family: "Cormorant Garamond", serif;
 
+  font-size: 2rem;
 
-.dato h3{
-
-    font-family:"Cormorant Garamond",serif;
-
-    font-size:2rem;
-
-    color:#8B6B61;
-
+  color: #8b6b61;
 }
-
-
 
 /* =========================
    SEPARADORES
 ========================= */
 
+/* =========================
+   SEPARADOR ELEGANTE CSS
+========================= */
 
-.separador-seccion{
+.separador-seccion {
+  width: 180px;
 
-    width:min(240px,70vw);
+  height: 1px;
 
-    display:block;
+  background: #b8955e;
 
-    margin:20px auto;
+  margin: 15px auto;
 
-    opacity:.85;
-
+  position: relative;
 }
 
+/* detalle central */
 
+.separador-seccion::before {
+  content: "♥";
 
+  position: absolute;
+
+  left: 50%;
+
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  background: #f9f4ef;
+
+  padding: 0 12px;
+
+  color: #a98975;
+
+  font-size: 18px;
+
+  font-family: "Cormorant Garamond", serif;
+}
 /* =========================
    REGALOS
 ========================= */
 
+.datos-regalo {
+  display: flex;
 
-.datos-regalo{
+  justify-content: center;
 
-    display:flex;
+  align-items: stretch;
 
-    justify-content:center;
+  flex-wrap: wrap;
 
-    align-items:stretch;
+  gap: 25px;
 
-    flex-wrap:wrap;
-
-    gap:25px;
-
-    margin:35px auto;
-
+  margin: 35px auto;
 }
 
+.dato-regalo {
+  width: 220px;
 
+  padding: 25px 15px;
 
-.dato-regalo{
+  background: rgba(139, 107, 97, 0.08);
 
-    width:220px;
+  border: 1px solid rgba(169, 137, 117, 0.35);
 
-    padding:25px 15px;
-
-    background:rgba(139,107,97,.08);
-
-    border:1px solid rgba(169,137,117,.35);
-
-    border-radius:20px;
-
+  border-radius: 20px;
 }
 
+.dato-regalo h3 {
+  font-family: "Cormorant Garamond", serif;
 
+  font-size: 2rem;
 
-.dato-regalo h3{
-
-    font-family:"Cormorant Garamond",serif;
-
-    font-size:2rem;
-
-    color:#8B6B61;
-
+  color: #8b6b61;
 }
 
+.dato-regalo span {
+  display: block;
 
+  margin: 15px 0;
 
-.dato-regalo span{
+  word-break: break-word;
 
-    display:block;
-
-    margin:15px 0;
-
-    word-break:break-word;
-
-    color:#5C4634;
-
+  color: #5c4634;
 }
 
-
-
-.titular{
-
-    margin-top:25px;
-
+.titular {
+  margin-top: 25px;
 }
 
+.titular strong {
+  font-family: "Cormorant Garamond", serif;
 
-
-.titular strong{
-
-    font-family:"Cormorant Garamond",serif;
-
-    font-size:1.8rem;
-
+  font-size: 1.8rem;
 }
-
-
 
 /* =========================
    FLORES FIJAS
 ========================= */
 
+.flores-fijas {
+  position: fixed;
 
-.flores-fijas{
+  inset: 0;
 
-    position:fixed;
+  pointer-events: none;
 
-    inset:0;
-
-    pointer-events:none;
-
-    z-index:5;
-
+  z-index: 5;
 }
 
+.flor-fija {
+  position: absolute;
 
-
-.flor-fija{
-
-    position:absolute;
-
-    width:120px;
-
+  width: 160px;
 }
 
+.flor-fija.arriba {
+  top: 0;
 
-
-.flor-fija.arriba{
-
-    top:0;
-
-    left:0;
-
+  left: 0;
 }
 
+.flor-fija.abajo {
+  bottom: 0;
 
-
-.flor-fija.abajo{
-
-    bottom:0;
-
-    right:0;
-
+  right: 0;
 }
-
-
-
-
 
 /* =========================
    FOOTER
 ========================= */
 
+footer {
+  background: #f9f4ef;
 
-footer{
+  border-top: 1px solid rgba(169, 137, 117, 0.35);
 
-    background:#F9F4EF;
+  text-align: center;
 
-    border-top:1px solid rgba(169,137,117,.35);
+  padding: 60px 20px;
 
-    text-align:center;
+  opacity: 0;
 
-    padding:60px 20px;
-
-    opacity:0;
-
-    transition:1.5s;
-
+  transition: 1.5s;
 }
 
-
-
-footer.mostrar-footer{
-
-    opacity:1;
-
+footer.mostrar-footer {
+  opacity: 1;
 }
 
+footer p {
+  font-family: "Cormorant Garamond", serif;
 
+  font-size: 3rem;
 
-footer p{
-
-    font-family:"Cormorant Garamond",serif;
-
-    font-size:3rem;
-
-    color:#5C4634;
-
+  color: #5c4634;
 }
-
-
 
 /* =========================
    RESPONSIVE FINAL
 ========================= */
 
+@media (max-width: 900px) {
+  .marco-flores {
+    padding: 50px 35px;
+  }
 
-@media(max-width:900px){
+  .flor-marco {
+    width: 110px;
+  }
 
+  .unidad {
+    width: 100px;
 
-    .marco-flores{
+    height: 100px;
+  }
 
-        padding:50px 35px;
-
-    }
-
-
-    .flor-marco{
-
-        width:110px;
-
-    }
-
-
-    .unidad{
-
-        width:100px;
-
-        height:100px;
-
-    }
-
-
-    .unidad span{
-
-        font-size:4rem;
-
-    }
-
-
+  .unidad span {
+    font-size: 4rem;
+  }
 }
 
+@media (max-width: 600px) {
+  section:not(.sobre) {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
 
+  .separador-seccion {
+    width: 130px;
 
+    margin: 10px auto;
+  }
 
-@media(max-width:600px){
+  .separador-seccion::before {
+    font-size: 15px;
 
+    padding: 0 8px;
+  }
 
-    section:not(.sobre){
+  .marco-flores {
+    width: calc(100% - 30px);
 
-        padding:45px 15px;
+    padding: 40px 25px;
+  }
 
-    }
+  .flor{
+    width: 100px;
+  }
 
+  .flor-marco {
+    width: 85px;
+  }
 
+  .contenido-marco p {
+    font-size: 0.95rem;
+  }
 
-    .marco-flores{
+  .datos-regalo {
+    flex-direction: column;
 
-        width:calc(100% - 30px);
+    align-items: center;
+  }
 
-        padding:40px 25px;
+  .dato-regalo {
+    width: 90%;
+  }
 
-    }
+  .tiempo {
+    flex-wrap: nowrap;
 
+    gap: 5px;
+  }
 
+  .unidad {
+    width: 65px;
 
-    .flor-marco{
+    height: 65px;
+  }
 
-        width:85px;
+  .unidad span {
+    font-size: 2.5rem;
+  }
 
-    }
+  .unidad p {
+    font-size: 0.45rem;
 
+    letter-spacing: 0;
+  }
 
+  .separador-tiempo {
+    font-size: 2rem;
 
-    .contenido-marco p{
+    display: block;
+  }
+  .flor-fija {
+    width: 90px;
+  }
 
-        font-size:.95rem;
+  .marco-flores:not(.marco-dia) .flor-marco.arriba {
+    top: -20px;
+  }
 
-    }
+  .marco-flores:not(.marco-dia) .flor-marco.abajo {
+    bottom: -20px;
+  }
 
-
-
-    .datos-regalo{
-
-        flex-direction:column;
-
-        align-items:center;
-
-    }
-
-
-
-    .dato-regalo{
-
-        width:90%;
-
-    }
-
-
-
-    .tiempo{
-
-        gap:10px;
-
-    }
-
-
-
-    .unidad{
-
-        width:75px;
-
-        height:75px;
-
-    }
-
-
-
-    .unidad span{
-
-        font-size:3rem;
-
-    }
-
-
-
-    .unidad p{
-
-        font-size:.55rem;
-
-        letter-spacing:1px;
-
-    }
-
-
-
-    .separador-tiempo{
-
-        font-size:2.5rem;
-
-    }
-
-
-
-    .flor-fija{
-
-        width:80px;
-
-    }
-
-
-
-    footer p{
-
-        font-size:2.2rem;
-
-    }
-
-
-
+  footer p {
+    font-size: 2.2rem;
+  }
 }
 
+@media (max-width: 380px) {
+  .unidad {
+    width: 65px;
 
+    height: 65px;
+  }
 
-@media(max-width:380px){
+  .unidad span {
+    font-size: 2.5rem;
+  }
 
-
-    .unidad{
-
-        width:65px;
-
-        height:65px;
-
-    }
-
-
-    .unidad span{
-
-        font-size:2.5rem;
-
-    }
-
-
-    .separador-tiempo{
-
-        display:none;
-
-    }
-
-
+  .separador-tiempo {
+    display: none;
+  }
 }
